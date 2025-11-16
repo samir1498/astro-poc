@@ -1,9 +1,11 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
-import mdx from '@astrojs/mdx';
+import { defineConfig } from "astro/config";
+import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
-	integrations: [mdx()],
-	outDir: './docs',
+  integrations: [mdx()],
+  base: "/astro-poc/",
+  outDir: "./docs",
+  trailingSlash: "always",
 });
