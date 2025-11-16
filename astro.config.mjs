@@ -5,7 +5,6 @@ import mdx from "@astrojs/mdx";
 // https://astro.build/config
 export default defineConfig({
   integrations: [mdx()],
-  base: "/astro-poc/",
   outDir: "./docs",
   trailingSlash: "always",
 });
